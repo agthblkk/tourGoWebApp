@@ -1,0 +1,62 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-3.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="/css/contacts.css">
+</head>
+<body>
+<form action="/contacts" method="get">
+    <div id = "upper">
+        <img id = "logo" src="/img/logoMain.png">
+        <div id="menu">
+            <h4 class = "upelement"><a class="upelement", href="/main">ГОЛОВНА</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/about">ПРО НАС</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/tours">ТУРИ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/living">ПРОЖИВАННЯ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/contacts">КОНТАКТИ</a></h4>
+        </div>
+    </div>
+    <h1>КОНТАКТИ</h1>
+    <div id="contacts">
+        <img src="/img/contactsImg.jpg" alt="">
+        <div>
+            <div id="smedia">
+                <p>ТЕЛЕФОН +380984881021</p>
+                <p>ТЕЛЕГРАМ @TOURGO</p>
+                <p>ІНСТАГРАМ @TOURGO</p>
+                <p>E-MAIL TOURGO@GMAIL.COM</p>
+            </div>
+            <p>ДЗВІНКИ ПРИЙМАЄМО КОЖНОГО
+                ДНЯ З 9:00 - 19:00</p>
+            <div id="address" >
+                <p>адреса м. Київ, вуль. Академіка
+                    Янгеля, 7</p>
+            </div>
+            <button id="showOnMap">ПОКАЗАТИ НА КАРТІ</button>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>КОНТАКТИ</p>
+            <img src="/img/contacs.png" id="img">
+        </div>
+        <div id="sec1">
+            <p>Умови подорожування</p>
+            <p>Як ми гарантуємо безпеку</p>
+            <p>Умови проживання</p>
+            <p>Ціни</p>
+        </div>
+        <div id="sec2">
+            <p>Чому нам довіряють</p>
+            <p>Більше інформації</p>
+        </div>
+    </footer>
+</form>
+</body>
+</html>

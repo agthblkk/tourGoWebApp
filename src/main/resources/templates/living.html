@@ -1,0 +1,77 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-3.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПРОЖИВАННЯ</title>
+    <link rel="stylesheet" href="/css/living.css">
+</head>
+<body>
+<form>
+    <div id = "upper">
+        <img id = "logo", src="/img/logoMain.png">
+        <div id="menu">
+            <h4 class = "upelement"><a class="upelement", href="/main">ГОЛОВНА</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/about">ПРО НАС</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/tours">ТУРИ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/living">ПРОЖИВАННЯ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/contacts">КОНТАКТИ</a></h4>
+        </div>
+    </div>
+    <h1>ПРОЖИВАННЯ</h1>
+    <div class="info">
+        <img src="/img/tents.jpg" alt="">
+        <div class="textDiv">
+            <p>ІНДИВІДУАЛЬНІ ТУРИ ТА ТУРИ ВИХІДНОГО ДНЯ</p>
+            <p>Проживання у просторних, комфортабельних наметах, які можна отримати на місці зустрічи з ментором</p>
+            <p id="useTents">Можна використовувати власні палатки</p>
+            <button onclick="parent.location='tours.html'" class="chooseButton">ОБРАТИ ТУР</button>
+        </div>
+    </div>
+    <div class="info">
+        <img src="/img/house.jpg" alt="">
+        <div class="textDiv">
+            <p>7-ДЕННІ ТУРИ</p>
+            <p class="SevenDaysPs", id="addit">*також включає комфортабельні намети</p>
+            <p class="SevenDaysPs">3-дні проживання в готелі “Карпати Люкс” біля озера Синевір. Вартість проживання у готелі вже входить у вартість туру.</p>
+            <p class="SevenDaysPs">Готель знаходиться за адресою Закарпатська обл., Синевірська Поляна, 1</p>
+            <p class="SevenDaysPs">Поряд розташоване кафе тільки для гостей готелю, масажний салон та аренда авто.</p>
+            <p class="SevenDaysPs", id="addit1">3 дні перебування у готелі Ви будете харчуватися триразово, це входить у вартість туру.</p>
+            <a href="https://www.google.com.ua/maps"><button class="chooseButton", id="showMap">ПОКАЗАТИ НА КАРТІ</button></a>
+        </div>
+    </div>
+    <div class="info">
+        <div class="textDiv", id="hotelDiv">
+            <p>• кімнати на 1, 2 та 3 персони</p>
+            <p>• душ та ванна у кожній кімнаті</p>
+            <p>• релакс рум (без інтернету)</p>
+            <p>• ніяких посторонніх шумів навколо готелю, тільки природа</p>
+            <p id="addit2">ВСЕ ВЖЕ ВХОДИТЬ У ВАРТІСТЬ ТУРУ</p>
+            <button onclick="parent.location='tours.html'", class="chooseButton">ОБРАТИ ТУР</button>
+            <button onclick="parent.location='takeCons.html'", id="newButton">ЗАМОВИТИ КОНСУЛЬТАЦІЮ</button>
+        </div>
+        <img id="hotelImg", src="/img/hotel.jpg" alt="">
+    </div>
+    <footer>
+        <div id="contacts">
+            <p>КОНТАКТИ</p>
+            <img src="/img/contacs.png", id="img">
+        </div>
+        <div id="sec1">
+            <p>Умови подорожування</p>
+            <p>Як ми гарантуємо безпеку</p>
+            <p>Умови проживання</p>
+            <p>Ціни</p>
+        </div>
+        <div id="sec2">
+            <p>Чому нам довіряють</p>
+            <p>Більше інформації</p>
+        </div>
+    </footer>
+</form>
+</body>
+</html>

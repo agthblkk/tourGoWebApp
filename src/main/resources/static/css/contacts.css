@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+* {
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+}
+html, body{
+    margin: 0;
+    width: 100%;
+}
+#upper{
+    display: flex;
+    font-size: 21px;
+    background-color: #C4DC7B;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: fit-content;
+    position: fixed;
+    z-index: 100;
+}
+.upelement{
+    text-decoration: none;
+    color: black;
+}
+.upelement:hover{
+    color: gray;
+}
+#menu{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15%;
+    width: 100%;
+    margin-left: 3%;
+    margin-top: -1%;
+}
+#menu>h4{
+    margin-top: 3%; 
+    margin-bottom: 0;
+}
+#menu>h4:hover{
+    color: #9F9F9F;
+}
+#logo{
+    width: 10%;
+    height: 20%;
+    margin-bottom: 0;
+    margin-left: 8%;
+}
+#contacts>img{
+    width: 700px;
+    height: 500px;
+    border-radius: 100px;
+}
+h1{
+    margin-top: 7%;
+    text-align: center;
+    font-size: 56px;
+}
+#contacts{
+    display: inline-flex;
+    text-align: center;
+    font-size: 36px;
+    width: 70%;
+    text-shadow: 6px 6px 30px #FD5E53;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+#smedia{
+    border: solid 1px black;
+    width: 80%;
+    margin-left: 10%;
+}
+#smedia>p{
+    margin: 1%;
+}
+#address>p{
+    width: 90%;
+    margin-top: 15%;
+    margin-left: 5%;
+    border: solid 1px black;
+}
+#showOnMap{
+    width: 500px;
+    height: 100px;
+
+    background: #FD5E53;
+    border-radius: 100px;
+    border-width: 0;
+    font-size: 46px;
+    color: #FFFFFF;
+    text-shadow: 6px 6px 30px rgba(0, 0, 0, 0.25);
+    font-size: 43px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    -webkit-text-stroke: 3px #FFFFFF;
+}
+#showOnMap:hover{
+    background-color: #9F9F9F;
+    transition: 1s;
+}
+footer{
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-top: 25%;
+    border-top: 1px solid black;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 0;
+  }
+  #img{
+    width: 35%;
+  }

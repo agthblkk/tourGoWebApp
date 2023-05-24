@@ -1,0 +1,99 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-3.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПРО НАС</title>
+    <link rel="stylesheet" href="/css/aboutUs.css">
+</head>
+<body>
+<form action="/about" method="get">
+    <div id = "upper">
+        <img id = "logo" src="/img/logoMain.png">
+        <div id="menu">
+            <h4 class = "upelement"><a class="upelement", href="/main">ГОЛОВНА</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/about">ПРО НАС</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/tours">ТУРИ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/living">ПРОЖИВАННЯ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/contacts">КОНТАКТИ</a></h4>
+        </div>
+    </div>
+    <div id="divFirst">
+        <h1>ПРО НАС</h1>
+        <h1 id="freeCons">БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ</h1>
+        <button onclick="parent.location='takeCons.html'"><h1>ЗАПИСАТИСЯ</h1></button>
+        <p> 2016 РОКУ МАЄМО 3000 ПОСТІЙНИХ КЛІЄНТІВ І 5000+ КЛІЄНТІВ ЩОРІЧНО</p>
+        <p>ЗА АДРЕСОЮ М. КИЇВБ ВУЛ. АКАДЕМІКА ЯНГЕЛЯ, 7 ЗНАХОДИТЬСЯ ОФІС TOURGO, В ЯКОМУ
+            ПРАЦЮЄ ПОНАД 500 ЛЮДЕЙ, ЩОБ ЗРОБИТИ ВАШУ ПОДОРОЖ ДО КАРПАТ НЕЗАБУТНЬОЮ
+        </p>
+        <img src="/img/address.png">
+    </div>
+    <div class ="infoCons">
+        <div class="textCons">
+            <p>ПОНАД 100 ЩОДЕННИХ КОНСУЛЬТАЦІЙ ЩО ДО ТУРІВ У КАРПАТИ</p>
+            <p>ЗАМОВИТИ КОНСУЛЬТАЦІЮ МОЖНА ЗА ТЕЛЕФОНОМ +380984881021</p>
+            <p id="dost">ДОСТПУНІ ОНЛАЙН/ОФЛАЙН КОНСУЛЬТАЦІЇ</p>
+            <p id="free">БЕЗКОШТОВНА КОНСУЛЬТАЦІЯ</p>
+            <button onclick="parent.location='takeCons.html'", class="buttonChoose" ><p>ЗАПИСАТИСЯ</p></button>
+        </div>
+        <img id="indPhoto" src="/img/consulting.jpg">
+    </div>
+    <div id="mentors">
+        <h1>МЕНТОРИ У ПОХОДАХ</h1>
+        <div class="mentorInfo">
+            <img src="/img/danylo.jpg" alt="">
+            <div class="mentorsText">
+                <p>ДАНИЛО</p>
+                <p>ІНСТАГРАМ @DANYLOTOURGO</p>
+                <p>БУВ У 1000+ ПОХОДАХ, УСПІШНО ЗАКІНЧИВ КУРСИ ПЕРШОЇ МЕДИЧНОЇ ДОПОМОГИ. ДОПОМОЖЕ ОСВОЇТИСЬ У ПОХОДАХ
+                    ВСІМ НОВАЧКАМ, А ПРОФЕСІОНАЛАМ РОЗПОВІСТЬ СТАНЕ ДОБРИМ КОМПАНЬЙОНОМ І З РАДІСТЮ ПОДІЛИТЬСЯ ДОСВІДОМ.
+                </p>
+                <p>ПРОВОДИТЬ ЛЕКЦІЇ З ТУРИЗМУ.</p>
+            </div>
+        </div>
+        <div class="mentorInfo">
+            <div  id="saviaText", class="mentorsText">
+                <p>САВІЯ</p>
+                <p>ІНСТАГРАМ @SAVIATOURGO</p>
+                <p>ПОДОЛАЛА 500+ ПОХОДІВ. ТУРИ ВИХІДНОГО ДНЯ САВІЯ ОБОЖНЮЄ І ТЕБЕ ЗМУСИТЬ ЇХ ПОЛЮБИТИ, ГАРАНТУЄМО.
+                    УСПІШНО ЗАКІНЧИЛА КУРСИ ДОМЕДИЧНОЇ ДОПОМОГИ І МАЄ ВИЩУ ОСВІТУ ЗА СПЕЦІАЛІЗАЦІЄЮ "ТУРИЗМ". З НЕЮ
+                    КОЖЕН ПОХІД СПОВНЕНИЙ ЯССКРАВИХ ЕМОЦІЙ.
+                </p>
+            </div>
+            <img src="/img/savia.jpg" alt="">
+        </div>
+        <div class="mentorInfo">
+            <img src="/img/marieMarlen.jpg" alt="">
+            <div class="mentorsText">
+                <p>МАРІ І МАРЛЕН</p>
+                <p>ІНСТАГРАМ @MMTOURGO</p>
+                <p>ЦЯ СІМЕЙНА ПАРА ПРОВОДИТЬ НЕЗАБУТНІ 7-ДЕННІ ПОХОДИ І МАЄ ЗА СПИНОЮ ВЖЕ 1300+ СПІЛЬНИХ ПОХОДІВ. ЦІ ВЕЛИКІ
+                    ПРОФЕСІОНАЛИ НАВЧАТЬ НОВОМУ НАВІТЬ ДОСВІДЧЕНИХ ЛЮДКЙ У ПОХОДАХ. ОБИДВА ПРОЙШЛИ КУРСИ ДОМЕДИЧНОЇ
+                    ДОПОМОГИ. ЩИРІ КОМПАНЬЙОНИ НЕ ДАДУТЬ ТОБІ СУМУВАТИ.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="contacts">
+            <p>КОНТАКТИ</p>
+            <img src="/img/contacs.png" id="img">
+        </div>
+        <div id="sec1">
+            <p>Умови подорожування</p>
+            <p>Як ми гарантуємо безпеку</p>
+            <p>Умови проживання</p>
+            <p>Ціни</p>
+        </div>
+        <div id="sec2">
+            <p>Чому нам довіряють</p>
+            <p>Більше інформації</p>
+        </div>
+    </footer>
+</form>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-3.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" lang="">
+<head>
+    <meta charset="UTF-8" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourGo - тури у Карпати</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<form action="/main", method="get">
+    <div id = "upper">
+        <img id = "logo" src="/img/logoMain.png" alt="">
+        <div id="menu">
+            <h4 class = "upelement"><a class="upelement", href="/main">ГОЛОВНА</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/about">ПРО НАС</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/tours">ТУРИ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/living">ПРОЖИВАННЯ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/contacts">КОНТАКТИ</a></h4>
+        </div>
+    </div>
+    <div id="mainTop">
+        <div id="insideMainTop">
+            <h1>TourGo</h1>
+            <div id="topText">
+                <h3>Подорожі до Карпат</h3>
+                <img id = "mountain" src="/img/mountain.png">
+            </div>
+            <h4 id="textUnder">Незабутніх емоцій і крутих знайомств гарантуємо!</h4>
+            <div id="pngDiv">
+                <img id = "backpack" src="/img/backpack.png">
+                <img id = "tent" src="/img/tent.png">
+                <img id = "sticker" src="/img/happy.png">
+            </div>
+        </div>
+        <a href="tours.html"><button class="buttonChoose" ><h1>ОБРАТИ ТУР</h1></button></a>
+        <div id="textDiv">
+            <p>МИ МАЄМО ДЛЯ ТЕБЕ</p>
+        </div>
+        <div id="imgDiv">
+            <a href="indTours.html"><img class="imgMain" src="/img/firstOne.png"></a>
+            <a href="wDaysTours.html"><img class="imgMain" src="/img/secondOne.png"></a>
+            <a href="sevenDaysTours.html"><img class="imgMain" src="/img/thirdOne.png"></a>
+        </div>
+        <div id="namesTours">
+            <p class="text" id="indTours">індивідуальні тури</p>
+            <p class="text" id="wndTour">тури вихідного дня</p>
+            <p class="text" id="SevenDTours">7-денні тури</p>
+        </div>
+        <div id="infoDiv">
+            <p class="p1">У ВАРТІСТЬ ВХОДИТЬ</p>
+            <ul>
+                <li>• проживання</li>
+                <li>• харчування</li>
+                <li>• ментор під час всього походу</li>
+                <li>• транспорт зі Львову до місця зустрічі</li>
+            </ul>
+            <p id="p2">НАШІ ТУРИ ПІДХОДЯТЬ УСІМ ВІД 18 ДО 35 РОКІВ</p>
+            <div id="priceAdd" >
+                <div id="tableDiv">
+                    <table id="table">
+                        <tr class="tableBiggerWords">
+                            <td id="topLeft" >Тури</td>
+                            <td>індивідуальні</td>
+                            <td>вихідного дня</td>
+                            <td id="topRight" >7-денні</td>
+                        </tr>
+                        <tr>
+                            <td id="bottomLeft" class="tableBiggerWords">Ціна</td>
+                            <td class="tableSmallerWords">від 700 грн/доба</td>
+                            <td class="tableSmallerWords">від 500 грн/доба</td>
+                            <td id="bottomRight" class="tableSmallerWords">від 300 грн/доба</td>
+                        </tr>
+                    </table>
+                </div>
+                <img id="priceImg" src="/img/best-price.png">
+            </div>
+            <button onclick="parent.location='tours.html'" class="buttonChoose" ><h1>ОБРАТИ ТУР</h1></button>
+        </div>
+        <div id="chooseDiv">
+            <p class="p1">ЗАРАЗ НАЙБІЛЬШЕ ОБИРАЮТЬ</p>
+            <div class ="Tours">
+                <img class="indPhoto" src="/img/indPhoto.png">
+                <div class="textTour">
+                    <h5>ІНДИВІДУАЛЬНИЙ ТУР</h5>
+                    <h5>29.04 - 01.05</h5>
+                    <h5>900 грн/доба</h5>
+                    <p>проживання у наметах, які ми надаємо при зустрічі</p>
+                    <p>триразове харчування (варена каша/суп у казанці)</p>
+                    <p>особистий ментор</p>
+                    <button onclick="parent.location='takeTour.html'" class="buttonChoose" ><h1>ЗАМОВИТИ ТУР</h1></button>
+                </div>
+            </div>
+            <div class ="Tours">
+                <div class="textTour">
+                    <h5>7-ДЕННИЙ ТУР</h5>
+                    <h5>03.06 - 10.06</h5>
+                    <h5>400 грн/доба</h5>
+                    <p>проживання у палатках, які ми надаємо при зустрічі</p>
+                    <p id="plus">+</p>
+                    <p id="hotel">три доби в готелі "КарпатиЛюкс" біля озера Синевір</p>
+                    <p>триразове харчування</p>
+                    <p>ментор на весь час походу</p>
+                    <button onclick="parent.location='takeTour.html'", class="buttonChoose" ><h1>ЗАМОВИТИ ТУР</h1></button>
+                </div>
+                <img class="indPhoto" src="/img/7DaysTour.png">
+            </div>
+        </div>
+        <div id="fillIn">
+            <p>НЕ ВПЕВНЕНИЙ ЯКИЙ ТУР ОБРАТИ АБО ПОТРЕБУЄШ КОНСУЛЬТАЦІЇ?</p>
+            <p>ЗАПОВНИ ЗАЯВКУ І МИ ЗАТЕЛЕФОНУЄМО У НАЙБЛИЖЧУ ГОДИНУ</p>
+            <button onclick="parent.location='takeCons.html'" class="buttonChoose" id="btnFillIn" ><h1>ЗАПОВНИТИ ЗАЯВКУ</h1></button>
+        </div>
+    </div>
+    <footer>
+        <div id="contacts">
+            <p>КОНТАКТИ</p>
+            <img src="/img/contacs.png" id="img">
+        </div>
+        <div id="sec1">
+            <p>Умови подорожування</p>
+            <p>Як ми гарантуємо безпеку</p>
+            <p>Умови проживання</p>
+            <p>Ціни</p>
+        </div>
+        <div id="sec2">
+            <p>Чому нам довіряють</p>
+            <p>Більше інформації</p>
+        </div>
+    </footer>
+</form>
+</body>
+</html>

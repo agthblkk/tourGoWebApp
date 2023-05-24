@@ -1,0 +1,55 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-3.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТУРИ</title>
+    <link rel="stylesheet" href="/css/tours.css">
+</head>
+<body>
+<form action="/tours" method="get" >
+    <div id = "upper">
+        <img id = "logo", src="/img/logoMain.png">
+        <div id="menu">
+            <h4 class = "upelement"><a class="upelement", href="/main">ГОЛОВНА</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/about">ПРО НАС</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/tours">ТУРИ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/living">ПРОЖИВАННЯ</a></h4>
+            <h4 class = "upelement"><a class="upelement", href="/contacts">КОНТАКТИ</a></h4>
+        </div>
+    </div>
+    <h1>ТУРИ</h1>
+    <p>ОБИРАЙ, ЩО ДЛЯ ТЕБЕ</p>
+    <div id="imgDiv">
+        <img class="imgMain" src="/img/firstOne.png">
+        <img class="imgMain" src="/img/secondOne.png">
+        <img class="imgMain" src="/img/thirdOne.png">
+    </div>
+    <div id="namesTours">
+        <a href="/individual_tours"><button class="buttonChoose">ІНДИВІДУАЛЬНІ ТУРИ</button></a>
+        <a href="/weekend_tours"><button class="buttonChoose">ТУРИ ВИХІДНОГО ДНЯ</button></a>
+        <a href="/seven_days_tour"><button class="buttonChoose">7-ДЕННІ ТУРИ</button></a>
+    </div>
+    <footer>
+        <div id="contacts">
+            <p>КОНТАКТИ</p>
+            <img src="/img/contacs.png", id="img">
+        </div>
+        <div id="sec1">
+            <p>Умови подорожування</p>
+            <p>Як ми гарантуємо безпеку</p>
+            <p>Умови проживання</p>
+            <p>Ціни</p>
+        </div>
+        <div id="sec2">
+            <p>Чому нам довіряють</p>
+            <p>Більше інформації</p>
+        </div>
+    </footer>
+</form>
+</body>
+</html>

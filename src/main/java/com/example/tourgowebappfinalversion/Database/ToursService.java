@@ -26,4 +26,8 @@ public class ToursService {
     public List<Tours> findAll(Pageable pageable) {
         return ToursRepository.findAll(pageable).getContent();
     }
+    @Transactional(readOnly=true)
+    public Tours findTour(long id) {
+        return ToursRepository.findById(id).get();
+    }
 }

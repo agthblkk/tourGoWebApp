@@ -3,8 +3,11 @@ package com.example.tourgowebappfinalversion.Database;
 import jakarta.persistence.*;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Entity
 @NoArgsConstructor
+
 public class Tours {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,6 +15,11 @@ public class Tours {
     private String title;
     private String date;
     private int availableSeatsNum;
+//    @OneToOne(mappedBy = "tourId", cascade = CascadeType.ALL)
+//    @JoinColumn(name = "tourId", referencedColumnName = "id")
+//    private Clients client;
+    @OneToMany(mappedBy = "tour")
+    private List<Clients> clients;
 
     public Long getId() {
         return id;

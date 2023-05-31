@@ -38,26 +38,21 @@ public class BookTourController {
 
     @RequestMapping(value = "/taking_tour", method = RequestMethod.POST)
     public String processBooking(Model model,
-                                 @RequestParam(value = "name", required = true) String name,
-                                 @RequestParam(value = "surname", required = true) String surname,
-                                 @RequestParam(value = "phone", required = true) String phone,
-                                 @RequestParam(value = "email", required = true) String email,
-                                 @RequestParam(value = "tour", required = true) long tourId){
-//        Clients client = new Clients();
-//        client.setName(name);
-//        client.setSurname(surname);
-//        client.setPhone(phone);
-//        client.setEmail(email);
-        Tours tour = (tourId != DEFAULT_TOUR_ID) ? toursService.findTour(tourId) : null;
-//        client.setTour(idTour);
-//        Clients client = new Clients(name, surname, phone, email, tour);
+                                 @RequestParam(value = "name", required = false) String name,
+                                 @RequestParam(value = "surname", required = false) String surname,
+                                 @RequestParam(value = "phone", required = false) String phone,
+                                 @RequestParam(value = "email", required = false) String email,
+                                 @RequestParam(value = "secondSelect", required = false) String tourId){
         // Create a new user
+        Long idTour = Long.valueOf(tourId);
+        Tours tour = toursService.findTour(idTour);
         Clients client = new Clients();
         client.setName(name);
         client.setSurname(surname);
         client.setPhone(phone);
         client.setEmail(email);
         client.setTour(tour);
+        System.out.println(tourId);
 
         // Save the user to the database
         clientsRepository.save(client);

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/takeTour.css">
 </head>
 <body>
-<form action="/taking_tour" method="get">
+<form action="/taking_tour" method="post">
     <div id = "upper">
         <img id = "logo", src="/img/logoMain.png">
         <div id="menu">
@@ -33,47 +33,16 @@
                 <option th:value="${tour.id}" th:text="${tour.title} + ' ' + ${tour.date}"></option>
             </th:block>
         </select>
-        <input value="name" type="text" placeholder="ім'я" required>
-        <input value="surname" type="text" placeholder="прізвище" required>
-        <input value="phone" type="text" placeholder="телефон" required>
-        <input value="email" type="text" placeholder="e-mail" required>
-        <input type="submit" />
+        <input name="name" type="text" placeholder="ім'я" required>
+        <input name="surname" type="text" placeholder="прізвище" required>
+        <input name="phone" type="text" placeholder="телефон" required>
+        <input name="email" type="text" placeholder="e-mail" required>
+        <input type="submit"/>
     </div>
     <footer>
         <div id="contacts">
             <p>КОНТАКТИ</p>
             <img src="/img/contacs.png" , id="img">
-        </div>
-        <div id="sec1">
-            <p>Умови подорожування</p>
-            <p>Як ми гарантуємо безпеку</p>
-            <p>Умови проживання</p>
-            <p>Ціни</p>
-        </div>
-        <div id="sec2">
-            <p>Чому нам довіряють</p>
-            <p>Більше інформації</p>
-        </div>
-    </footer>
-</form>
-<form action="/taking_tour" method="post">
-    <div id = "upper">
-        <img id = "logo", src="logoMain.png">
-        <div id="menu">
-            <h4 class = "upelement"><a class="upelement", href="/main">ГОЛОВНА</a></h4>
-            <h4 class = "upelement"><a class="upelement", href="/about">ПРО НАС</a></h4>
-            <h4 class = "upelement"><a class="upelement", href="/tours">ТУРИ</a></h4>
-            <h4 class = "upelement"><a class="upelement", href="/living">ПРОЖИВАННЯ</a></h4>
-            <h4 class = "upelement"><a class="upelement", href="/contacts">КОНТАКТИ</a></h4>
-        </div>
-    </div>
-    <h1>ЗАМОВЛЕННЯ ТУРУ</h1>
-    <h3>Дякуємо за ваше замовлення! Ви забронювали місце у обраному турі. Найближчим часом ми Вам зателефонуємо.</h3>
-    <a href="index.html"><button>НА ГОЛОВНУ</button></a>
-    <footer>
-        <div id="contacts">
-            <p>КОНТАКТИ</p>
-            <img src="contacs.png", id="img">
         </div>
         <div id="sec1">
             <p>Умови подорожування</p>

@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дякуємо за замовлення!</title>
-    <link rel="stylesheet" href="afterTakeTour.css">
+    <link rel="stylesheet" href="/css/afterTakeTour.css">
 </head>
 <body>
+<form action="/tookConsSuccessfully" method="post">
     <div id = "upper">
-        <img id = "logo", src="logoMain.png">
+        <img id = "logo", src="/img/logoMain.png">
         <div id="menu">
             <h4 class = "upelement"><a class="upelement", href="/main">ГОЛОВНА</a></h4>
             <h4 class = "upelement"><a class="upelement", href="/about">ПРО НАС</a></h4>
@@ -20,11 +21,11 @@
     </div>
     <h1>ЗАПИС НА КОНСУЛЬТАЦІЮ</h1>
     <h3>У найближчу годину ми Вам зателефонуємо.</h3>
-    <a href="index.html"><button>НА ГОЛОВНУ</button></a>
+    <a href="/main" id="likeButton">НА ГОЛОВНУ</a>
     <footer>
         <div id="contacts">
             <p>КОНТАКТИ</p>
-            <img src="contacs.png", id="img">
+            <img src="/img/contacs.png", id="img">
         </div>
         <div id="sec1">
             <p>Умови подорожування</p>
@@ -37,5 +38,6 @@
             <p>Більше інформації</p>
         </div>
     </footer>
+</form>
 </body>
 </html>

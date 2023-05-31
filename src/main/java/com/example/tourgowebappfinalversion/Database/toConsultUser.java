@@ -1,16 +1,18 @@
 package com.example.tourgowebappfinalversion.Database;
 
+
 import jakarta.persistence.*;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-//@Data
 @NoArgsConstructor
-public class Clients {
+@Table(name = "toconsultuser")
+public class toConsultUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    private String format;
     private String name;
     private String surname;
     private String phone;
@@ -22,6 +24,14 @@ public class Clients {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getFormat() {
+        return format;
+    }
+
+    public void setFormat(String format) {
+        this.format = format;
     }
 
     public String getName() {
@@ -56,25 +66,13 @@ public class Clients {
         this.email = email;
     }
 
-
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "tour")
-    private Tours tour;
-
-    public Tours getTour() {
-        return tour;
-    }
-
-    public void setTour(Tours tour) {
-        this.tour = tour;
-    }
-
-    public Clients(String email, String name,
-                   String phone, String surname, Tours tour){
+    public toConsultUser(String format, String name, String surname,
+                          String phone, String email){
         this.name = name;
+        this.format = format;
         this.surname = surname;
         this.phone = phone;
         this.email = email;
-        this.tour = tour;
     }
+
 }

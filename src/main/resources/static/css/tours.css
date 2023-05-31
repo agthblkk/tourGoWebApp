@@ -101,6 +101,10 @@ p{
     margin: 0;
     -webkit-text-stroke: 2px #FFFFFF;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 footer{
     display: inline-flex;
     justify-content: space-evenly;

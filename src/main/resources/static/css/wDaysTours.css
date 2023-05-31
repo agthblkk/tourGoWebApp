@@ -214,3 +214,7 @@ footer{
 #pluses{
     margin-left: 15%
 }
+a{
+    text-decoration: none;
+    color: white;
+}

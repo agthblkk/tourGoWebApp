@@ -108,26 +108,111 @@ html, body{
     margin-top: 0;
     margin-left: 31%;
 }
-.buttonChoose{
+#likeButton{
     margin-top: 33%;
     margin-left: 40%;
     position: absolute;
     width: 306px;
     height: 88px;
 
+    text-decoration: none;
     background: #FD5E53;
     border-radius: 100px;
     border-width: 0;
     font-size: 46px;
     color: #FFFFFF;
 }
-.buttonChoose>h1{
+#likeButton>h1{
     text-shadow: 6px 6px 30px rgba(0, 0, 0, 0.25);
     font-size: 43px;
     color: #FFFFFF;
     text-align: center;
     margin: 0;
+    margin-top: 6%;
     -webkit-text-stroke: 3px #FFFFFF;
+}
+#likeButton1{
+    margin-top: 3%;
+    margin-left: 40%;
+    position: absolute;
+    width: 306px;
+    height: 88px;
+
+    text-decoration: none;
+    background: #FD5E53;
+    border-radius: 100px;
+    border-width: 0;
+    font-size: 46px;
+    color: #FFFFFF;
+}
+#likeButton1>h1{
+    text-shadow: 6px 6px 30px rgba(0, 0, 0, 0.25);
+    font-size: 43px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    margin-top: 6%;
+    -webkit-text-stroke: 3px #FFFFFF;
+}
+#takeTourButton{
+    margin-top: -1%;
+    margin-left: -12%;
+    position: absolute;
+    width: 400px;
+    height: 88px;
+
+    text-decoration: none;
+    background: #FD5E53;
+    border-radius: 100px;
+    border-width: 0;
+    font-size: 46px;
+    color: #FFFFFF;
+}
+#takeTourButton>h1{
+    text-shadow: 6px 6px 30px rgba(0, 0, 0, 0.25);
+    font-size: 43px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    margin-top: 6%;
+    -webkit-text-stroke: 3px #FFFFFF;
+}
+.takeTourButton1{
+    margin-top: -1%;
+    margin-left: -12%;
+    position: absolute;
+    width: 400px;
+    height: 88px;
+
+    text-decoration: none;
+    background: #FD5E53;
+    border-radius: 100px;
+    border-width: 0;
+    font-size: 46px;
+    color: #FFFFFF;
+}
+.takeTourButton1>h1{
+    text-shadow: 6px 6px 30px rgba(0, 0, 0, 0.25);
+    font-size: 43px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    margin-top: 6%;
+    -webkit-text-stroke: 3px #FFFFFF;
+}
+#cons{
+    width:500px;
+    margin-top: 3%;
+    margin-left: -16.5%;
+}
+
+#likeButton:hover{
+    background-color: #9F9F9F;
+    transition: 1s;
+}
+#likeButton1:hover{
+    background-color: #9F9F9F;
+    transition: 1s;
 }
 #textDiv{
     margin-top: 46%;
